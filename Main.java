@@ -82,63 +82,63 @@ public class Main {
     
         public static int contaPedidos(Pedido[] listaPedidos){
         
-            int countPedidosTotais = 0;
+            int countPedidos = 0;
         
             for (int i = 0; i < listaPedidos.length; i++) {
         
-                countPedidosTotais++;
+                countPedidos++;
         
             }
         
-            return countPedidosTotais;
+            return countPedidos;
         }
     
         public static int contaPedidosAbertos(Pedido[] listaPedidos){
         
-            int countPedidosTotais = 0;
+            int countPedidos = 0;
         
             for (int i = 0; i < listaPedidos.length; i++) {
             
                 if (listaPedidos[i].getStatus().equals("Aberto")) {
             
-                    countPedidosTotais++;
+                    countPedidos++;
                 
                 }        
             }
         
-            return countPedidosTotais;
+            return countPedidos;
         }
     
         public static int contaPedidosAprovados(Pedido[] listaPedidos){
         
-            int countPedidosTotais = 0;
+            int countPedidos = 0;
         
             for (int i = 0; i < listaPedidos.length; i++) {
             
                 if (listaPedidos[i].getStatus().equals("Aprovado")) {
             
-                    countPedidosTotais++;
+                    countPedidos++;
                 
                 }        
             }
         
-            return countPedidosTotais;
+            return countPedidos;
         }
     
         public static int contaPedidosReprovados(Pedido[] listaPedidos){
         
-            int countPedidosTotais = 0;
+            int countPedidos = 0;
         
             for (int i = 0; i < listaPedidos.length; i++) {
             
                 if (listaPedidos[i].getStatus().equals("Reprovado")) {
             
-                countPedidosTotais++;
+                countPedidos++;
                 
                 }        
             }
         
-            return countPedidosTotais;
+            return countPedidos;
         }
     
     }      
