@@ -64,10 +64,14 @@ public class Main {
         System.out.println("Informe o valor unitário do item: "); 
         double valorUnitario = scanner.nextDouble(); 
         
-        System.out.println("");
+        System.out.println(----------------------------------------------);
 
         System.out.println("Informe a quantidade solicitada: "); 
-        int quantidade = scanner.nextInt();         
+        int quantidade = scanner.nextInt();
+
+        System.out.println(----------------------------------------------);
+
+        System.out.println("Pedido realizado com sucesso!")         
         
         Pedido novoPedido = new Pedido(usuario, usuario.getNome(), usuario.getDepartamento(), LocalDate.now(), null, "Aberto", descricao, valorUnitario, quantidade);
         
