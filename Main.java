@@ -55,18 +55,18 @@ public class Main {
         
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("");
-        System.out.println("### Insira a descrição do item solicitado: "); 
+        System.out.println(---------------------------------------------);
+        System.out.println("Insira a descrição do item solicitado: "); 
         String descricao = scanner.nextLine(); 
         
-        System.out.println("");
+        System.out.println(----------------------------------------------);
 
-        System.out.println("### Informe o valor unitário do item: "); 
+        System.out.println("Informe o valor unitário do item: "); 
         double valorUnitario = scanner.nextDouble(); 
         
         System.out.println("");
 
-        System.out.println("### Informe a quantidade solicitada: "); 
+        System.out.println("Informe a quantidade solicitada: "); 
         int quantidade = scanner.nextInt();         
         
         Pedido novoPedido = new Pedido(usuario, usuario.getNome(), usuario.getDepartamento(), LocalDate.now(), null, "Aberto", descricao, valorUnitario, quantidade);
