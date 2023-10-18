@@ -49,7 +49,32 @@ public class Main {
         usuariosMap.put("user14", user14);
         usuariosMap.put("user15", user15);
 
-    //Criando método de contar pedidos 
+      //Criando Método de Fazer Pedido
+
+        public static Pedido fazerPedido(Usuario usuario) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("");
+        System.out.println("### Insira a descrição do item solicitado: "); 
+        String descricao = scanner.nextLine(); 
+        
+        System.out.println("");
+
+        System.out.println("### Informe o valor unitário do item: "); 
+        double valorUnitario = scanner.nextDouble(); 
+        
+        System.out.println("");
+
+        System.out.println("### Informe a quantidade solicitada: "); 
+        int quantidade = scanner.nextInt();         
+        
+        Pedido novoPedido = new Pedido(usuario, usuario.getNome(), usuario.getDepartamento(), LocalDate.now(), null, "Aberto", descricao, valorUnitario, quantidade);
+        
+        return novoPedido;
+    }
+
+        //Criando método de contar pedidos 
     
         public static int contaPedidos(Pedido[] listaPedidos){
         
