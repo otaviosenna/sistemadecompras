@@ -48,6 +48,70 @@ public class Main {
         usuariosMap.put("user13", user13);
         usuariosMap.put("user14", user14);
         usuariosMap.put("user15", user15);
+
+    //Criando método de contar pedidos 
+    
+        public static int contaPedidos(Pedido[] listaPedidos){
         
-    }
+            int countPedidosTotais = 0;
+        
+            for (int i = 0; i < listaPedidos.length; i++) {
+        
+                countPedidosTotais++;
+        
+            }
+        
+            return countPedidosTotais;
+        }
+    
+        public static int contaPedidosAbertos(Pedido[] listaPedidos){
+        
+            int countPedidosTotais = 0;
+        
+            for (int i = 0; i < listaPedidos.length; i++) {
+            
+                if (listaPedidos[i].getStatus().equals("Aberto")) {
+            
+                    countPedidosTotais++;
+                
+                }        
+            }
+        
+            return countPedidosTotais;
+        }
+    
+        public static int contaPedidosAprovados(Pedido[] listaPedidos){
+        
+            int countPedidosTotais = 0;
+        
+            for (int i = 0; i < listaPedidos.length; i++) {
+            
+                if (listaPedidos[i].getStatus().equals("Aprovado")) {
+            
+                    countPedidosTotais++;
+                
+                }        
+            }
+        
+            return countPedidosTotais;
+        }
+    
+        public static int contaPedidosReprovados(Pedido[] listaPedidos){
+        
+            int countPedidosTotais = 0;
+        
+            for (int i = 0; i < listaPedidos.length; i++) {
+            
+                if (listaPedidos[i].getStatus().equals("Reprovado")) {
+            
+                countPedidosTotais++;
+                
+                }        
+            }
+        
+            return countPedidosTotais;
+        }
+    
+    }      
 }
+
