@@ -1,31 +1,33 @@
+package src;
+
 public class Usuario {
-    
+
     // Atributos
-    
+
     private int id;
     private String nome;
-    private String iniciais; 
+    private String iniciais;
     private String tipo;
     private Departamento departamento;
-    
+
     // Construtor
 
-    public Usuario (int id, String nome, String iniciais, String tipo, Departamento departamento) {
-        
-        this.id = id; 
-        this.nome = nome; 
+    public Usuario(int id, String nome, String iniciais, String tipo, Departamento departamento) {
+
+        this.id = id;
+        this.nome = nome;
         this.iniciais = iniciais;
         this.tipo = tipo;
         this.departamento = departamento;
-        
+
     }
-    
+
     // Métodos
 
-    public int getId(){
-        return this.id; 
+    public int getId() {
+        return this.id;
     }
-    
+
     public String getNome() {
         return this.nome;
     }
@@ -33,7 +35,7 @@ public class Usuario {
     public String setNome(String nome) {
         return this.nome = nome;
     }
-    
+
     public String getTipo() {
         return this.tipo;
     }
@@ -49,7 +51,7 @@ public class Usuario {
     public String setIniciais(String iniciais) {
         return this.iniciais = iniciais;
     }
-    
+
     public Departamento getDepartamento() {
         return this.departamento;
     }
@@ -58,5 +60,4 @@ public class Usuario {
         return this.departamento = departamento;
     }
 
-    
 }

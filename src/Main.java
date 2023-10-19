@@ -1,3 +1,5 @@
+package src;
+
 import java.util.Scanner;
 import java.time.LocalDate;
 import java.util.HashMap;
