@@ -23,7 +23,7 @@ String descricaoDoProduto = "Nome do produto"
 Double valorDoProduto = 1,99;
 
 
-[OTAVIO]
+[LUANA]
 Classe Pedido (usuario.getnome)
 Usuario usuario.nomeUsuario = ""
 Departamento = 
