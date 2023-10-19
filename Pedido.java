@@ -1,7 +1,11 @@
 import java.time.LocalDate;
 
 public class Pedido {
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> departamento
     private Usuario usuario;
     private String nomeDoUsuario;
     private Departamento departamento;
@@ -12,6 +16,7 @@ public class Pedido {
     private double valorUnitario;
     private int quantidade;
     private double valorTotal;
+<<<<<<< HEAD
     
     public Pedido (Usuario usuario, String nomeDoUsuario, Departamento departamento, LocalDate dataDoPedido, LocalDate dataDaConclusao, String status, String descricao, double valorUnitario, int quantidade) {
         
@@ -50,6 +55,46 @@ public class Pedido {
     }
     
     public void setStatus(String status){
+=======
+
+    public Pedido(Usuario usuario, String nomeDoUsuario, Departamento departamento, LocalDate dataDoPedido,
+            LocalDate dataDaConclusao, String status, String descricao, double valorUnitario, int quantidade) {
+
+        this.usuario = usuario;
+        this.nomeDoUsuario = nomeDoUsuario;
+        this.departamento = departamento;
+        this.dataDoPedido = dataDoPedido;
+        this.dataDaConclusao = dataDaConclusao;
+        this.status = status;
+        this.descricao = descricao;
+        this.valorUnitario = valorUnitario;
+        this.quantidade = quantidade;
+        this.valorTotal = valorUnitario * quantidade;
+
+    }
+
+    public String getStatus() {
+        return this.status;
+    }
+
+    public double getValorTotal() {
+        return this.valorTotal;
+    }
+
+    public String getDescricao() {
+        return this.descricao;
+    }
+
+    public String getNomeDoUsuario() {
+        return this.nomeDoUsuario;
+    }
+
+    public LocalDate getDataDoPedido() {
+        return this.dataDoPedido;
+    }
+
+    public void setStatus(String status) {
+>>>>>>> departamento
         this.status = status;
     }
 }
