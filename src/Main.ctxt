@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Main
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment10.params=listaPedidos
+comment10.target=double\ somaValorReprovados(Pedido[])
+comment2.params=usuario
+comment2.target=Pedido\ fazerPedido(Usuario)
+comment3.params=listaPedidos
+comment3.target=int\ contaPedidos(Pedido[])
+comment4.params=listaPedidos
+comment4.target=int\ contaPedidosAbertos(Pedido[])
+comment5.params=listaPedidos
+comment5.target=int\ contaPedidosAprovados(Pedido[])
+comment6.params=listaPedidos
+comment6.target=int\ contaPedidosReprovados(Pedido[])
+comment7.params=listaPedidos
+comment7.target=double\ somaValorTotal(Pedido[])
+comment8.params=listaPedidos
+comment8.target=double\ somaValorAbertos(Pedido[])
+comment9.params=listaPedidos
+comment9.target=double\ somaValorAprovados(Pedido[])
+numComments=11

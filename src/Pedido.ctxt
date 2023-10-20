@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Pedido
+comment1.params=usuario\ nomeDoUsuario\ departamento\ dataDoPedido\ dataDaConclusao\ status\ descricao\ valorUnitario\ quantidade
+comment1.target=Pedido(Usuario,\ java.lang.String,\ src.Departamento,\ java.time.LocalDate,\ java.time.LocalDate,\ java.lang.String,\ java.lang.String,\ double,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getStatus()
+comment3.params=
+comment3.target=double\ getValorTotal()
+comment4.params=
+comment4.target=java.lang.String\ getDescricao()
+comment5.params=
+comment5.target=java.lang.String\ getNomeDoUsuario()
+comment6.params=
+comment6.target=java.time.LocalDate\ getDataDoPedido()
+comment7.params=status
+comment7.target=void\ setStatus(java.lang.String)
+numComments=8

@@ -1,9 +1,9 @@
-package src;
+ 
 
 import java.time.LocalDate;
 
 public class Pedido {
-
+    
     private Usuario usuario;
     private String nomeDoUsuario;
     private Departamento departamento;
@@ -14,44 +14,44 @@ public class Pedido {
     private double valorUnitario;
     private int quantidade;
     private double valorTotal;
-
-    public Pedido(Usuario usuario, String nomeDoUsuario, Departamento departamento, LocalDate dataDoPedido,
-            LocalDate dataDaConclusao, String status, String descricao, double valorUnitario, int quantidade) {
-
-        this.usuario = usuario;
-        this.nomeDoUsuario = nomeDoUsuario;
-        this.departamento = departamento;
+    
+    public Pedido (Usuario usuario, String nomeDoUsuario, Departamento departamento, LocalDate dataDoPedido, LocalDate dataDaConclusao, String status, String descricao, double valorUnitario, int quantidade) {
+        
+        this.usuario = usuario; 
+        this.nomeDoUsuario = nomeDoUsuario; 
+        this.departamento = departamento; 
         this.dataDoPedido = dataDoPedido;
         this.dataDaConclusao = dataDaConclusao;
-        this.status = status;
-        this.descricao = descricao;
+        this.status = status; 
+        this.descricao = descricao; 
         this.valorUnitario = valorUnitario;
-        this.quantidade = quantidade;
-        this.valorTotal = valorUnitario * quantidade;
-
+        this.quantidade = quantidade; 
+        this.valorTotal = valorUnitario * quantidade; 
+        
     }
-
+    
+    
     public String getStatus() {
         return this.status;
     }
-
+    
     public double getValorTotal() {
         return this.valorTotal;
     }
-
+    
     public String getDescricao() {
         return this.descricao;
     }
-
-    public String getNomeDoUsuario() {
+    
+    public String getNomeDoUsuario(){
         return this.nomeDoUsuario;
     }
-
-    public LocalDate getDataDoPedido() {
+    
+    public LocalDate getDataDoPedido(){
         return this.dataDoPedido;
     }
-
-    public void setStatus(String status) {
+    
+    public void setStatus(String status){
         this.status = status;
     }
 }
