@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Usuario
+comment1.params=id\ nome\ iniciais\ tipo\ departamento
+comment1.target=Usuario(int,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ Departamento)
+comment2.params=
+comment2.target=int\ getIdUsuario()
+comment3.params=
+comment3.target=java.lang.String\ getNome()
+comment4.params=
+comment4.target=java.lang.String\ getTipo()
+comment5.params=
+comment5.target=java.lang.String\ getIniciais()
+comment6.params=
+comment6.target=Departamento\ getDepartamento()
+numComments=7
